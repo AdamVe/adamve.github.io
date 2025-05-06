@@ -14,7 +14,7 @@ async function createCredential(setPaymentExtension, optionalOverrides = {}) {
       optionalOverrides;
   const rp = {
     id: window.location.hostname,
-    name: 'Rouslan Solomakhin',
+    name: 'SPC Demo',
   };
   const pubKeyCredParams = [{
     type: 'public-key',
@@ -46,7 +46,7 @@ async function createCredential(setPaymentExtension, optionalOverrides = {}) {
     authenticatorSelection: {
       userVerification: 'required',
       residentKey,
-      authenticatorAttachment: 'platform',
+      authenticatorAttachment: 'cross-platform',
     },
   };
 
